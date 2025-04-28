@@ -1,0 +1,156 @@
+import { type Delivery, DeliveryStatus } from "../types"
+
+// Mock data for today's deliveries
+export const mockTodayDeliveries: Delivery[] = [
+  {
+    id: "del-today-1",
+    restaurant: {
+      id: "rest-1",
+      name: "Burger King",
+      address: "202 Kinsy St, Colombo 08",
+    },
+    customer: {
+      id: "cust-1",
+      name: "Duvini Kahatapitiya",
+      address: "303 Main St, Colombo 07",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 3,
+    distance: 2.4,
+    earnings: 8.5,
+    expectedDeliveryTime: "2023-06-23T12:30:00.000Z",
+    completedAt: "2023-06-23T12:25:00.000Z",
+    paymentMethod: "Card",
+    issues: null,
+  },
+  {
+    id: "del-today-2",
+    restaurant: {
+      id: "rest-2",
+      name: "Pizza Hut",
+      address: "202 Kinsy St, Colombo 08",
+    },
+    customer: {
+      id: "cust-2",
+      name: "Disara Ranaweera",
+      address: "303 Main St, Colombo 07",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 2,
+    distance: 3.1,
+    earnings: 9.75,
+    expectedDeliveryTime: "2023-06-23T13:45:00.000Z",
+    completedAt: "2023-06-23T13:40:00.000Z",
+    paymentMethod: "Cash",
+    issues: null,
+  },
+  {
+    id: "del-today-3",
+    restaurant: {
+      id: "rest-3",
+      name: "Taco Bell",
+      address: "202 Kinsy St, Colombo 08",
+    },
+    customer: {
+      id: "cust-3",
+      name: "Charlie Puth",
+      address: "303 Main St, Colombo 07",
+    },
+    status: DeliveryStatus.ASSIGNED,
+    items: 4,
+    distance: 1.8,
+    earnings: 7.25,
+    expectedDeliveryTime: "2023-06-23T15:00:00.000Z",
+    completedAt: "2023-06-23T13:40:00.000Z",
+    paymentMethod: "Card",
+    issues: null,
+  },
+]
+
+// Mock data for past deliveries
+export const mockDeliveries: Delivery[] = [
+  {
+    id: "del-1",
+    restaurant: {
+      id: "rest-4",
+      name: "McDonald's",
+      address: "202 Kinsy St, Colombo 08",
+    },
+    customer: {
+      id: "cust-4",
+      name: "Thusala Manamperi",
+      address: "505 Main St, Kuruduwatta",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 5,
+    distance: 4.2,
+    earnings: 12.3,
+    expectedDeliveryTime: "2023-06-22T11:15:00.000Z",
+    completedAt: "2023-06-22T11:10:00.000Z",
+    paymentMethod: "Card",
+    issues: null,
+  },
+  {
+    id: "del-2",
+    restaurant: {
+      id: "rest-5",
+      name: "Subway",
+      address: "606 Main St, Borella",
+    },
+    customer: {
+      id: "cust-5",
+      name: "Edward Dissanayake",
+      address: "707 Pineapple St, Dehiwala",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 1,
+    distance: 2.7,
+    earnings: 6.8,
+    expectedDeliveryTime: "2023-06-22T12:45:00.000Z",
+    completedAt: "2023-06-22T12:50:00.000Z",
+    paymentMethod: "Card",
+    issues: "Customer was not at home, left with neighbor",
+  },
+  {
+    id: "del-3",
+    restaurant: {
+      id: "rest-6",
+      name: "KFC",
+      address: "808 King St, Kollupitiya",
+    },
+    customer: {
+      id: "cust-6",
+      name: "Rivin de Silva",
+      address: "909 Orange St, Bambalapitiya",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 3,
+    distance: 3.5,
+    earnings: 10.15,
+    expectedDeliveryTime: "2023-06-21T18:30:00.000Z",
+    completedAt: "2023-06-21T18:25:00.000Z",
+    paymentMethod: "Cash",
+    issues: null,
+  },
+  {
+    id: "del-4",
+    restaurant: {
+      id: "rest-7",
+      name: "Chipotle",
+      address: "1010 Grape St, Union Place, Colombo 2",
+    },
+    customer: {
+      id: "cust-7",
+      name: "Sachila Piyarisi",
+      address: "1111 Mount Lavinia, Dehiwala",
+    },
+    status: DeliveryStatus.DELIVERED,
+    items: 2,
+    distance: 5.1,
+    earnings: 14.5,
+    expectedDeliveryTime: "2023-06-21T19:45:00.000Z",
+    completedAt: "2023-06-21T19:40:00.000Z",
+    paymentMethod: "Card",
+    issues: null,
+  },
+]
