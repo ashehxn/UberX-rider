@@ -61,7 +61,11 @@ export default function DeliveryPage({ params }: { params: { id: string } }) {
         newStatus,
         issues
       );
-      setDelivery(updatedDelivery);
+
+      setDelivery((prevDelivery) => ({
+        ...prevDelivery,
+        ...updatedDelivery,
+      }));
 
       toast.success("Status updated", {
         description:

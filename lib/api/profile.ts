@@ -8,10 +8,10 @@ export async function getProfile(): Promise<User> {
   // Return a mock user
   return {
     id: "user-1",
-    firstName: "John",
-    lastName: "Doe",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
+    firstName: "Rivin",
+    lastName: "de Silva",
+    email: "rivin@gmail.com",
+    phone: "+94 70-123-2211",
     status: "Active",
     createdAt: "2023-01-15T08:30:00.000Z",
     licenseNumber: "DL12345678",
