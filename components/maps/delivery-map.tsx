@@ -135,7 +135,7 @@ export function DeliveryMap({ delivery, isPickupStage }: DeliveryMapProps) {
             </div>
           </div>
 
-          <div className="absolute bottom-4 right-4 bg-white p-2 rounded-md shadow-md">
+          <div className="absolute bottom-4 left-4 bg-white p-2 rounded-md shadow-md">
             <div className="text-xs text-gray-500">Estimated distance</div>
             <div className="font-bold">{delivery.distance} km</div>
           </div>
