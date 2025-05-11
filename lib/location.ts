@@ -5,7 +5,7 @@ export async function getCurrentLocation(): Promise<{ latitude: number; longitud
 
   // Return a mock location (San Francisco)
   return {
-    latitude: 37.7749,
-    longitude: -122.4194,
+    latitude: 6.9103,
+    longitude: 79.9132,
   }
 }

@@ -1,3 +1,4 @@
+// src/lib/types.ts
 export enum DeliveryStatus {
   ASSIGNED = "ASSIGNED",
   PICKED_UP = "PICKED_UP",
@@ -6,40 +7,46 @@ export enum DeliveryStatus {
 }
 
 export interface Restaurant {
-  id: string
-  name: string
-  address: string
+  id: string;
+  name: string;
+  address: string;
+  latitude: number;
+  longitude: number;
 }
 
 export interface Customer {
-  id: string
-  name: string
-  address: string
+  id: string;
+  name: string;
+  email: string;
+  address: string;
+  latitude: number;
+  longitude: number;
 }
 
 export interface Delivery {
-  id: string
-  restaurant: Restaurant
-  customer: Customer
-  status: DeliveryStatus
-  items: number
-  distance: number
-  earnings: number
-  expectedDeliveryTime: string
-  completedAt: string | null
-  paymentMethod: string
-  issues: string | null
+  id: string;
+  restaurant: Restaurant;
+  customer: Customer;
+  status: DeliveryStatus;
+  items: number;
+  distance: number;
+  earnings: number;
+  expectedDeliveryTime: string;
+  completedAt: string | null;
+  paymentMethod: string;
+  riderEmail: string;
+  issues: string | null;
 }
 
 export interface User {
-  id: string
-  firstName: string
-  lastName: string
-  email: string
-  phone: string
-  status: string
-  createdAt: string
-  licenseNumber: string
-  totalDeliveries: number
-  rating: number
+  id: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  status: string;
+  createdAt: string;
+  licenseNumber: string;
+  totalDeliveries: number;
+  rating: number;
 }
